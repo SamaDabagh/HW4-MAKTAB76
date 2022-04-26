@@ -8,7 +8,8 @@ Expected Output: 'The Quick Brown Fox '
 const upercaseOfFirstChar = function (str) {
   return str
     .split(" ")
-    .map((element, index) => {
+    .map((element) => {
+      // console.log(element.slice(1).toString());
       return element.split("")[0].toUpperCase() + element.slice(1).toString();
     })
     .join(" ");

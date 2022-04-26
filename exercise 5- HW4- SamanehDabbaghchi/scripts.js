@@ -10,7 +10,7 @@ console.log(merge_array(array1, array2));
 
 const mergeArray = function (sampleArray1, sampleArray2) {
   // console.log(concatArr);
-  let mergedArr;
+
   return sampleArray1.concat(
     sampleArray2.filter((item) => {
       return sampleArray1.indexOf(item) === -1;

@@ -5,14 +5,7 @@ Write a JavaScript function to remove. 'null', '0', '""',
 
 const filterFalsyValue = function (sampleArray) {
   return sampleArray.filter((element) => {
-    if (
-      element !== null ||
-      element !== 0 ||
-      element !== "" ||
-      element !== false ||
-      element !== undefined ||
-      element !== NaN
-    ) {
+    if (element) {
       return element;
     }
   });
